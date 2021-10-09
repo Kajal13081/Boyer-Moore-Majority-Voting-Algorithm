@@ -43,6 +43,7 @@ else return -1
 
 ## Understand through Example
 
+```
 nums[ ]:       1, 1, 1, 1, 2, 3, 5
 
 count = 0:     1, 2, 3, 4, 3, 2, 1    
@@ -50,6 +51,7 @@ count = 0:     1, 2, 3, 4, 3, 2, 1
 maj_ele = 1:   1, 1, 1, 1, 1, 1, 1
 
 maj_ele = 1 after first traversal
+and count is
 
 count:         1, 2, 3, 4, 4, 4, 4
 
@@ -58,7 +60,7 @@ maj_ele = 1
 count > 7/2 i.e 3
 
 So majority element is 1.
-
+```
 
 ## Code Implementation
 
