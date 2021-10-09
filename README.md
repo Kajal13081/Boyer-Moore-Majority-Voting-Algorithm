@@ -43,15 +43,15 @@ else return -1
 
 ## Understand through Example
 
-nums[]        1, 1, 1, 1, 2, 3, 5
+nums[ ]:       1, 1, 1, 1, 2, 3, 5
 
-count = 0     1, 2, 3, 4, 3, 2, 1    
+count = 0:     1, 2, 3, 4, 3, 2, 1    
 
-maj_ele = 1   1, 1, 1, 1, 1, 1, 1
+maj_ele = 1:   1, 1, 1, 1, 1, 1, 1
 
 maj_ele = 1 after first traversal
 
-count         1, 2, 3, 4, 4, 4, 4
+count:         1, 2, 3, 4, 4, 4, 4
 
 maj_ele = 1
 
