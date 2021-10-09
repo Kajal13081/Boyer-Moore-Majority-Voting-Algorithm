@@ -26,8 +26,8 @@ We first choose a candidate from the given set of elements. If it is same as the
 
 ```java
 majorityElement(int[] nums)
-initialise first element of array as maj_ele, count = 0, i
-Traverse through the array from start to end using loop 
+maj_ele = nums[0], count = 0, i=0
+Traverse through the array from i=0 to i< nums.length using loop 
 if count = 0, 
    maj_ele = nums[i], 
    count = 1
