@@ -27,7 +27,7 @@ We first choose a candidate from the given set of elements. If it is same as the
 ```java
 majorityElement(int[] nums)
 initialise first element of array as maj_ele, count = 0, i
-Traverse through the array using loop 
+Traverse through the array from start to end using loop 
 if count = 0, 
    maj_ele = nums[i], 
    count = 1
@@ -35,7 +35,7 @@ else if current element == maj_ele
    count++
 else 
    count--
-Traverse through the array using loop 
+Traverse through the array from start to end using loop
 if count > N/2
    return maj_ele  
 else return -1
@@ -43,10 +43,21 @@ else return -1
 
 ## Understand through Example
 
-nums[] =        1  1  1  1  2  3
-count = 0       1
-maj_ele = 1     1
+nums[]        1, 1, 1, 1, 2, 3, 5
 
+count = 0     1, 2, 3, 4, 3, 2, 1    
+
+maj_ele = 1   1, 1, 1, 1, 1, 1, 1
+
+maj_ele = 1 after first traversal
+
+count         1, 2, 3, 4, 4, 4, 4
+
+maj_ele = 1
+
+count > 7/2 i.e 3
+
+So majority element is 1.
 
 
 ## Code Implementation
@@ -89,7 +100,7 @@ public static int majorityElement(int nums[])
 // Driver code
 public static void main(String[] args)
 {
-	int arr[] = { 1, 1, 1, 1, 2, 3, 4 };
+	int arr[] = { 1, 1, 1, 1, 2, 3, 5 };
 	int majority = majorityElement(arr);
 	System.out.println(" The majority element is " + majority);
 	}
@@ -116,7 +127,4 @@ No extra space is required so space complexity is O(1).
   https://leetcode.com/problems/majority-element/solution/
 - Majority Element II
   https://leetcode.com/problems/majority-element-ii/
-
-
-
-
+  
