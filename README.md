@@ -28,7 +28,7 @@ We first choose a candidate from the given set of elements. If it is same as the
 majorityElement(int[] nums)
 initialise first element of array as maj_ele, count = 0, i
 Traverse through the array using loop 
-If count = 0, 
+if count = 0, 
    maj_ele = nums[i], 
    count = 1
 else if current element == maj_ele
@@ -91,9 +91,8 @@ public static void main(String[] args)
 {
 	int arr[] = { 1, 1, 1, 1, 2, 3, 4 };
 	int majority = majorityElement(arr);
-	System.out.println(" The majority element is "
-					+ majority);
-}
+	System.out.println(" The majority element is " + majority);
+	}
 }
 ```
 
